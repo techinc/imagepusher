@@ -8,7 +8,7 @@ def color(x, y, phase):
 
 	phi /= 2.
 
-	r, g, b = math.sin( phi*2+phase*4 ), math.sin(phi*2+phase), math.cos(rad+phase/2.)*math.sin(phase/3.)
+	r, g, b = (math.sin( phi*2+phase*4 )+1.)/2., (math.sin(phi*2+phase)+1.)/2., (math.cos(-rad*1.5+phase*8.)*math.sin(phase/3.)+1.)/2.
 
 	return r**4,g**4,b**4
 
